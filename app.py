@@ -12,7 +12,7 @@ API_URL = "https://nepselytics-6d61dea19f30.herokuapp.com/api/nepselytics/floors
 # Sidebar
 st.sidebar.header("Controls")
 page = st.sidebar.number_input("Page", min_value=1, value=1)
-size = st.sidebar.selectbox("Page Size", [10, 20, 100])
+size = st.sidebar.selectbox("Page Size", [10, 20, 1000])
 order = st.sidebar.selectbox("Order", ["desc", "asc"])
 
 @st.cache_data(ttl=10)
